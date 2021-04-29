@@ -1,0 +1,21 @@
+1)create a redshift cluster
+  >create a role and attach policies(awss3 full acess and redshift full access)
+  > attach the role to cluster
+
+2) use dbeaverto connect redshift
+
+   1)openinboundgateways for vpc
+   2)enable access from outside(properties)
+
+3)create vpc endpoint
+  >create a role with s3 fiull acess and glues service access policy
+  >attach the role to it
+
+4)Create Database and table in glue
+   s3Path -> bucket that stored data
+
+5)create a crawler and read data from s3 and store to table
+
+6)create a crawler to connect redshift db
+
+
